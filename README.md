@@ -21,6 +21,15 @@ data class Defalt(
 ```
 
 <!--START_SECTION:waka-->
+
+```kotlin
+From: 01 January 2026 - To: 01 January 2026
+
+Total Time: 0 secs
+
+No activity tracked
+```
+
 <!--END_SECTION:waka-->
 
 <p align="center">
