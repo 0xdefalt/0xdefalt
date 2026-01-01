@@ -1,0 +1,16 @@
+{
+  "DependencyManagement.json": "{\r\n  \u0022Scoop-Search\u0022: \u0022attempted\u0022,\r\n  \u0022Git\u0022: \u0022attempted\u0022\r\n}",
+  "DisabledManagers.json": "{\r\n  \u0022Chocolatey\u0022: true,\r\n  \u0022Npm\u0022: true,\r\n  \u0022Pip\u0022: true,\r\n  \u0022Cargo\u0022: true,\r\n  \u0022vcpkg\u0022: true,\r\n  \u0022.NET Tool\u0022: true,\r\n  \u0022PowerShell\u0022: true,\r\n  \u0022PowerShell7\u0022: true\r\n}",
+  "DisableInstantSearch.json": "{\r\n  \u0022Discover\u0022: false,\r\n  \u0022Updates\u0022: false,\r\n  \u0022Installed\u0022: false,\r\n  \u0022Bundles\u0022: false\r\n}",
+  "DisableTelemetry": "",
+  "EnableUniGetUIBeta": "",
+  "GitHubUserLogin": "0xdefalt",
+  "IgnoredPackageUpdates.json": "{\r\n  \u0022winget\\\\Microsoft.OneDrive\u0022: \u002223.038.0219.0001\u0022\r\n}",
+  "PackageListViewMode.json": "{\r\n  \u0022Discover\u0022: 0,\r\n  \u0022Updates\u0022: 0,\r\n  \u0022Installed\u0022: 0,\r\n  \u0022Bundles\u0022: 0\r\n}",
+  "PreferredTheme": "auto",
+  "ShownTelemetryBanner": "",
+  "ShowVersionNumberOnTitlebar": "",
+  "SidepanelWidths.json": "{\r\n  \u0022Discover\u0022: 250,\r\n  \u0022Updates\u0022: 250\r\n}",
+  "UpdatesCheckInterval": "86400",
+  "WindowGeometry": "208,208,1440,753,0"
+}
