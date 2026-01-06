@@ -23,11 +23,12 @@ data class Defalt(
 <!--START_SECTION:waka-->
 
 ```kotlin
-From: 01 January 2026 - To: 04 January 2026
+From: 01 January 2026 - To: 05 January 2026
 
-Total Time: 1 hr 11 mins
+Total Time: 4 hrs 7 mins
 
-Markdown   1 hr 5 mins     >>>>>>>>>>>>>>>>>>>>>>>--   92.31 %
+Kotlin     2 hrs 51 mins   >>>>>>>>>>>>>>>>>--------   69.25 %
+Markdown   1 hr 5 mins     >>>>>>>------------------   26.50 %
 ```
 
 <!--END_SECTION:waka-->
