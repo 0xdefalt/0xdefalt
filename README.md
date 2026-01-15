@@ -23,7 +23,7 @@ data class Defalt(
 <!--START_SECTION:waka-->
 
 ```kotlin
-From: 01 January 2026 - To: 13 January 2026
+From: 01 January 2026 - To: 14 January 2026
 
 Total Time: 15 hrs 14 mins
 
