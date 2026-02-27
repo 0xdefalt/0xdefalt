@@ -1,0 +1,27 @@
+{
+  "username": "0xdefalt",
+  "style": "compact",
+  "styleText": "0xdefalt",
+  "sections": {
+    "ascii": {
+      "enabled": true,
+      "text": "About Me",
+      "font": "Standard",
+      "showCats": true
+    },
+    "stats": {
+      "enabled": true,
+      "showCommits": true,
+      "showStars": true,
+      "showFollowers": true
+    },
+    "languages": {
+      "enabled": true,
+      "topN": 5
+    },
+    "activity": {
+      "enabled": true,
+      "limit": 5
+    }
+  }
+}
