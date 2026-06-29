@@ -3,7 +3,9 @@
         "autoUpdate": true,
         "autoUpdateNotification": true,
         "useQuickCss": true,
-        "themeLinks": [],
+        "themeLinks": [
+            "@dark https://raw.githubusercontent.com/refact0r/system24/refs/heads/main/theme/flavors/system24-catppuccin-mocha.theme.css"
+        ],
         "eagerPatches": false,
         "enabledThemes": [
             "system24-catppuccin-mocha.theme.css"
@@ -49,7 +51,8 @@
                 "enabled": true
             },
             "AccountPanelServerProfile": {
-                "enabled": true
+                "enabled": true,
+                "prioritizeServerProfile": false
             },
             "AlwaysAnimate": {
                 "enabled": true
@@ -328,10 +331,6 @@
                 "logDeletes": true,
                 "deleteStyle": "text"
             },
-            "MessageTags": {
-                "enabled": true,
-                "tagsList": {}
-            },
             "MoreQuickReactions": {
                 "enabled": true
             },
@@ -524,7 +523,9 @@
                 "enabled": true
             },
             "ShowConnections": {
-                "enabled": true
+                "enabled": true,
+                "iconSpacing": 1,
+                "iconSize": 32
             },
             "ShowHiddenChannels": {
                 "enabled": true,
@@ -672,10 +673,21 @@
             },
             "Settings": {
                 "enabled": true,
-                "settingsLocation": "aboveNitro"
+                "settingsLocation": "aboveNitro",
+                "includeVencordInfoWhenCopying": true
             },
             "SupportHelper": {
                 "enabled": true
+            },
+            "CustomCommands": {
+                "enabled": true,
+                "tagsList": {}
+            },
+            "CharacterCounter": {
+                "enabled": false
+            },
+            "NoMiddleClickPaste": {
+                "enabled": false
             }
         },
         "uiElements": {
@@ -692,8 +704,9 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1772131846657
-        }
+            "settingsSyncVersion": 1782600793368
+        },
+        "windowsMaterial": "none"
     },
     "quickCss": ""
 }

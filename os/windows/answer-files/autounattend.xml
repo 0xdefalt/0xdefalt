@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <unattend xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
-	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Unattended&UILanguage=en-US&GeoLocation=244&Locale=en-US&Keyboard=00000409&UseKeyboard2=true&Locale2=pt-BR&Keyboard2=00010416&PEMode=Default&WindowsEditionMode=Generic&WindowsEdition=pro&ProcessorArchitecture=amd64&BypassRequirementsCheck=true&BypassNetworkCheck=true&HidePowerShellWindows=true&ComputerNameMode=Custom&ComputerName=penguin&TimeZoneMode=Explicit&TimeZone=E.+South+America+Standard+Time&UserAccountMode=Unattended&AccountName0=erick&AccountDisplayName0=defalt&AccountPassword0=1337&AccountGroup0=Administrators&AutoLogonMode=Own&ObscurePasswords=true&PasswordExpirationMode=Unlimited&LockoutMode=Default&HideFiles=HiddenSystem&ShowFileExtensions=true&ClassicContextMenu=true&HideInfoTip=true&LaunchToThisPC=true&ShowEndTask=true&TaskbarSearch=Hide&TaskbarIconsMode=Empty&DisableWidgets=true&LeftTaskbar=true&HideTaskViewButton=true&DisableBingResults=true&StartTilesMode=Empty&StartPinsMode=Empty&DisableSac=true&DisableSmartScreen=true&DisableFastStartup=true&EnableLongPaths=true&EnableRemoteDesktop=true&DeleteJunctions=true&AllowPowerShellScripts=true&DisableLastAccess=true&PreventAutomaticReboot=true&DisableAppSuggestions=true&PreventDeviceEncryption=true&HideEdgeFre=true&DisableEdgeStartupBoost=true&MakeEdgeUninstallable=true&DisablePointerPrecision=true&CoreIsolationMode=Enabled&DeleteWindowsOld=true&DisableAutomaticRestartSignOn=true&DisableWpbt=true&EffectsMode=Appearance&DeleteEdgeDesktopIcon=true&DesktopIconsMode=Custom&IconRecycleBin=true&StartFoldersMode=Custom&StartFolderPersonalFolder=true&StartFolderSettings=true&WifiMode=Skip&ExpressSettings=DisableAll&LockKeysMode=Configure&CapsLockInitial=Off&CapsLockBehavior=Toggle&NumLockInitial=Off&NumLockBehavior=Toggle&ScrollLockInitial=Off&ScrollLockBehavior=Toggle&StickyKeysMode=Disabled&ColorMode=Custom&SystemColorTheme=Dark&AppsColorTheme=Dark&AccentColor=%23454545&AccentColorOnBorders=true&EnableTransparency=true&WallpaperMode=Solid&WallpaperColor=%23000000&LockScreenMode=Default&Remove3DViewer=true&RemoveBingSearch=true&RemoveClipchamp=true&RemoveCopilot=true&RemoveCortana=true&RemoveWindowsHello=true&RemoveFamily=true&RemoveFeedbackHub=true&RemoveGameAssist=true&RemoveGetHelp=true&RemoveHandwriting=true&RemoveInternetExplorer=true&RemoveMailCalendar=true&RemoveMaps=true&RemoveMathInputPanel=true&RemoveMixedReality=true&RemoveZuneVideo=true&RemoveNews=true&RemoveOffice365=true&RemoveOneDrive=true&RemoveOneNote=true&RemoveOneSync=true&RemoveOutlook=true&RemovePaint=true&RemovePaint3D=true&RemovePeople=true&RemovePowerAutomate=true&RemoveQuickAssist=true&RemoveRecall=true&RemoveSkype=true&RemoveSnippingTool=true&RemoveSolitaire=true&RemoveSpeech=true&RemoveStepsRecorder=true&RemoveStickyNotes=true&RemoveTeams=true&RemoveGetStarted=true&RemoveToDo=true&RemoveVoiceRecorder=true&RemoveWallet=true&RemoveWeather=true&RemoveFaxAndScan=true&RemoveWindowsMediaPlayer=true&RemoveZuneMusic=true&RemoveWordPad=true&RemoveXboxApps=true&RemoveYourPhone=true&SystemScript0=%24uri+%3D+%5Buri%5D%3A%3Anew%28+%27https%3A%2F%2Faka.ms%2Fvs%2F17%2Frelease%2Fvc_redist.x64.exe%27+%29%3B%0D%0A%24file+%3D+%22%24env%3ATEMP%5C%7B0%7D%22+-f+%24uri.Segments%5B-1%5D%3B%0D%0A%5BSystem.Net.WebClient%5D%3A%3Anew%28%29.DownloadFile%28+%24uri%2C+%24file+%29%3B%0D%0AStart-Process+-FilePath+%24file+-ArgumentList+%27%2Fquiet+%2Fnorestart%27+-Wait%3B%0D%0ARemove-Item+-LiteralPath+%24file+-ErrorAction+%27SilentlyContinue%27%3B&SystemScriptType0=Ps1&SystemScript1=foreach%28+%24drive+in+%5BSystem.IO.DriveInfo%5D%3A%3AGetDrives%28%29+%29+%7B%0D%0A++++if%28+%24found+%3D+Join-Path+-Path+%24drive.RootDirectory+-ChildPath+%27drivers%5CFoo*.inf%27+-Resolve+-ErrorAction+%27SilentlyContinue%27+%29+%7B%0D%0A++++++++%24process+%3D+Start-Process+-FilePath+%22%24env%3Awindir%5CSystem32%5CInfDefaultInstall.exe%22+-ArgumentList+%22%22%22%24%7Bfound%7D%22%22%22+-PassThru%3B%0D%0A++++++++Start-Sleep+-Seconds+5%3B%0D%0A++++++++%24process+%7C+Stop-Process+-ErrorAction+%27SilentlyContinue%27%3B%0D%0A++++++++return%3B%0D%0A++++%7D%0D%0A%7D%0D%0A%27Cannot+find+any+files+that+match+pattern.%27+%7C+Write-Warning%3B&SystemScriptType1=Ps1&SystemScript2=%24out+%3D+%26+%22%24env%3Awindir%5CSystem32%5Cpowercfg.exe%22+%2FDuplicateScheme+%27e9a42b02-d5df-448d-aa00-03f14749eb61%27%3B%0D%0Aif%28+%24out+-match+%27%5Cs%28%5Ba-f0-9-%5D%7B36%7D%29%5Cs%27+%29+%7B%0D%0A++++%26+%22%24env%3Awindir%5CSystem32%5Cpowercfg.exe%22+%2FSetActive+%24Matches%5B1%5D%3B%0D%0A%7D+else+%7B%0D%0A++++%27Could+not+enable+Ultimate+Performance+power+scheme.%27+%7C+Write-Warning%3B%0D%0A%7D&SystemScriptType2=Ps1&FirstLogonScript0=%24user+%3D+%27microsoft%27%3B%0D%0A%24repository+%3D+%27terminal%27%3B%0D%0A%0D%0A%24latest+%3D+%24%28%0D%0A++++%26+%7B%0D%0A++++++++%24ProgressPreference+%3D+%27SilentlyContinue%27%3B%0D%0A++++++++Invoke-WebRequest+-Uri+%22https%3A%2F%2Fapi.github.com%2Frepos%2F%24%7Buser%7D%2F%24%7Brepository%7D%2Freleases%22+-UseBasicParsing+-Headers+%40%7B%0D%0A++++++++++++Accept+%3D+%27application%2Fvnd.github.v3%2Bjson%27%3B%0D%0A++++++++%7D+%7C+Select-Object+-ExpandProperty+%27Content%27+%7C+ConvertFrom-Json%3B%0D%0A++++%7D%3B%0D%0A%29+%7C+Where-Object+-FilterScript+%7B%0D%0A++++-not+%24_.draft+-and+-not+%24_.prerelease%3B%0D%0A%7D+%7C+Select-Object+-First+1%3B%0D%0A%0D%0A%24latest.assets.browser_download_url+%7C+Where-Object+-FilterScript+%7B%0D%0A++++%24_+-match+%27%5C.msixbundle%24%27%3B%0D%0A%7D+%7C+Select-Object+-First+1+%7C+ForEach-Object+-Process+%7B%0D%0A++++%24uri+%3D+%5Buri%5D%3A%3Anew%28+%24_+%29%3B%0D%0A++++%24file+%3D+%22%24env%3ATEMP%5C%7B0%7D%22+-f+%24uri.Segments%5B-1%5D%3B%0D%0A++++%5BSystem.Net.WebClient%5D%3A%3Anew%28%29.DownloadFile%28+%24uri%2C+%24file+%29%3B%0D%0A++++Add-AppxProvisionedPackage+-Online+-PackagePath+%24file+-SkipLicense%3B%0D%0A++++Remove-Item+-LiteralPath+%24file+-ErrorAction+%27SilentlyContinue%27%3B%0D%0A%7D%3B&FirstLogonScriptType0=Ps1&FirstLogonScript1=foreach%28+%24drive+in+%5BSystem.IO.DriveInfo%5D%3A%3AGetDrives%28%29+%29+%7B%0D%0A++++if%28+%24found+%3D+Join-Path+-Path+%24drive.RootDirectory+-ChildPath+%27sources%5Csxs%27+-Resolve+-ErrorAction+%27SilentlyContinue%27+%29+%7B%0D%0A++++++++Enable-WindowsOptionalFeature+-Online+-FeatureName+%27NetFx3%27+-Source+%24found+-NoRestart%3B%0D%0A++++++++return%3B%0D%0A++++%7D%0D%0A%7D%0D%0A%27Cannot+find+any+files+that+match+pattern.%27+%7C+Write-Warning%3B&FirstLogonScriptType1=Ps1&FirstLogonScript2=Windows+Registry+Editor+Version+5.00%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CDwm%5D%0D%0A%22OverlayTestMode%22%3Ddword%3A00000005&FirstLogonScriptType2=Reg&FirstLogonScript3=Disable-MMAgent+-mc&FirstLogonScriptType3=Ps1&RestartExplorer=true&AppLockerMode=Skip-->
+	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Unattended&UILanguage=en-US&Locale=en-US&Keyboard=00000409&UseKeyboard2=true&Locale2=pt-BR&Keyboard2=00010416&GeoLocation=244&PEMode=Default&WindowsEditionMode=Generic&WindowsEdition=pro&ProcessorArchitecture=amd64&BypassRequirementsCheck=true&BypassNetworkCheck=true&HidePowerShellWindows=true&ComputerNameMode=Custom&ComputerName=penguin&TimeZoneMode=Explicit&TimeZone=E.+South+America+Standard+Time&UserAccountMode=Unattended&AccountName0=erick&AccountDisplayName0=defalt&AccountPassword0=1337&AccountGroup0=Administrators&AutoLogonMode=Own&ObscurePasswords=true&PasswordExpirationMode=Unlimited&LockoutMode=Default&HideFiles=HiddenSystem&ShowFileExtensions=true&ClassicContextMenu=true&HideInfoTip=true&LaunchToThisPC=true&ShowEndTask=true&TaskbarSearch=Hide&TaskbarIconsMode=Empty&DisableWidgets=true&LeftTaskbar=true&HideTaskViewButton=true&DisableBingResults=true&StartTilesMode=Empty&StartPinsMode=Empty&DisableSac=true&DisableSmartScreen=true&DisableFastStartup=true&EnableLongPaths=true&EnableRemoteDesktop=true&DeleteJunctions=true&AllowPowerShellScripts=true&DisableLastAccess=true&PreventAutomaticReboot=true&DisableAppSuggestions=true&PreventDeviceEncryption=true&HideEdgeFre=true&DisableEdgeStartupBoost=true&MakeEdgeUninstallable=true&DisablePointerPrecision=true&CoreIsolationMode=Enabled&DeleteWindowsOld=true&DisableAutomaticRestartSignOn=true&DisableWpbt=true&EffectsMode=Appearance&DeleteEdgeDesktopIcon=true&DesktopIconsMode=Custom&IconRecycleBin=true&StartFoldersMode=Custom&StartFolderPersonalFolder=true&StartFolderSettings=true&WifiMode=Skip&ExpressSettings=DisableAll&LockKeysMode=Configure&CapsLockInitial=Off&CapsLockBehavior=Toggle&NumLockInitial=Off&NumLockBehavior=Toggle&ScrollLockInitial=Off&ScrollLockBehavior=Toggle&StickyKeysMode=Disabled&ColorMode=Custom&SystemColorTheme=Dark&AppsColorTheme=Dark&AccentColor=%23cba6f7&AccentColorOnBorders=true&EnableTransparency=true&WallpaperMode=Solid&WallpaperColor=%23000000&LockScreenMode=Default&Remove3DViewer=true&RemoveBingSearch=true&RemoveClipchamp=true&RemoveCopilot=true&RemoveCortana=true&RemoveWindowsHello=true&RemoveFamily=true&RemoveFeedbackHub=true&RemoveGameAssist=true&RemoveGetHelp=true&RemoveHandwriting=true&RemoveInternetExplorer=true&RemoveMailCalendar=true&RemoveMaps=true&RemoveMathInputPanel=true&RemoveMixedReality=true&RemoveZuneVideo=true&RemoveNews=true&RemoveOffice365=true&RemoveOneDrive=true&RemoveOneNote=true&RemoveOneSync=true&RemoveOutlook=true&RemovePaint=true&RemovePaint3D=true&RemovePeople=true&RemovePowerAutomate=true&RemoveQuickAssist=true&RemoveRecall=true&RemoveSkype=true&RemoveSnippingTool=true&RemoveSolitaire=true&RemoveSpeech=true&RemoveStepsRecorder=true&RemoveStickyNotes=true&RemoveTeams=true&RemoveGetStarted=true&RemoveToDo=true&RemoveVoiceRecorder=true&RemoveWallet=true&RemoveWeather=true&RemoveFaxAndScan=true&RemoveWindowsMediaPlayer=true&RemoveZuneMusic=true&RemoveWordPad=true&RemoveXboxApps=true&RemoveYourPhone=true&SystemScript0=%24uri+%3D+%5Buri%5D%3A%3Anew%28+%27https%3A%2F%2Faka.ms%2Fvs%2F17%2Frelease%2Fvc_redist.x64.exe%27+%29%3B%0D%0A%24file+%3D+%22%24env%3ATEMP%5C%7B0%7D%22+-f+%24uri.Segments%5B-1%5D%3B%0D%0A%5BSystem.Net.WebClient%5D%3A%3Anew%28%29.DownloadFile%28+%24uri%2C+%24file+%29%3B%0D%0AStart-Process+-FilePath+%24file+-ArgumentList+%27%2Fquiet+%2Fnorestart%27+-Wait%3B%0D%0ARemove-Item+-LiteralPath+%24file+-ErrorAction+%27SilentlyContinue%27%3B&SystemScriptType0=Ps1&SystemScript1=foreach%28+%24drive+in+%5BSystem.IO.DriveInfo%5D%3A%3AGetDrives%28%29+%29+%7B%0D%0A++++if%28+%24found+%3D+Join-Path+-Path+%24drive.RootDirectory+-ChildPath+%27drivers%5CFoo*.inf%27+-Resolve+-ErrorAction+%27SilentlyContinue%27+%29+%7B%0D%0A++++++++%24process+%3D+Start-Process+-FilePath+%22%24env%3Awindir%5CSystem32%5CInfDefaultInstall.exe%22+-ArgumentList+%22%22%22%24%7Bfound%7D%22%22%22+-PassThru%3B%0D%0A++++++++Start-Sleep+-Seconds+5%3B%0D%0A++++++++%24process+%7C+Stop-Process+-ErrorAction+%27SilentlyContinue%27%3B%0D%0A++++++++return%3B%0D%0A++++%7D%0D%0A%7D%0D%0A%27Cannot+find+any+files+that+match+pattern.%27+%7C+Write-Warning%3B&SystemScriptType1=Ps1&SystemScript2=%24out+%3D+%26+%22%24env%3Awindir%5CSystem32%5Cpowercfg.exe%22+%2FDuplicateScheme+%27e9a42b02-d5df-448d-aa00-03f14749eb61%27%3B%0D%0Aif%28+%24out+-match+%27%5Cs%28%5Ba-f0-9-%5D%7B36%7D%29%5Cs%27+%29+%7B%0D%0A++++%26+%22%24env%3Awindir%5CSystem32%5Cpowercfg.exe%22+%2FSetActive+%24Matches%5B1%5D%3B%0D%0A%7D+else+%7B%0D%0A++++%27Could+not+enable+Ultimate+Performance+power+scheme.%27+%7C+Write-Warning%3B%0D%0A%7D&SystemScriptType2=Ps1&SystemScript3=%24format+%3D+%27yyyy-MM-ddTHH%5C%3Amm%5C%3AssK%27%3B%0D%0A%24now+%3D+%5Bdatetime%5D%3A%3AUtcNow%3B%0D%0A%24start+%3D+%24now.ToString%28%24format%29%3B%0D%0A%24end+%3D+%24now.AddHours%281%29.ToString%28%24format%29%3B%0D%0A%24params+%3D+%40%7B%0D%0A++++LiteralPath+%3D+%27Registry%3A%3AHKLM%5CSoftware%5CMicrosoft%5CWindowsUpdate%5CUX%5CSettings%27%3B%0D%0A++++Type+%3D+%27String%27%3B%0D%0A++++Force+%3D+%24true%3B%0D%0A++++Verbose+%3D+%24true%3B%0D%0A%7D%3B%0D%0A%27PauseFeatureUpdatesStartTime%27%2C+%27PauseQualityUpdatesStartTime%27%2C+%27PauseUpdatesStartTime%27+%7C+foreach+%7B%0D%0A++++Set-ItemProperty+%40params+-Name+%24_+-Value+%24start%3B%0D%0A%7D%3B%0D%0A%27PauseFeatureUpdatesEndTime%27%2C+%27PauseQualityUpdatesEndTime%27%2C+%27PauseUpdatesExpiryTime%27+%7C+foreach+%7B%0D%0A++++Set-ItemProperty+%40params+-Name+%24_+-Value+%24end%3B%0D%0A%7D%3B&SystemScriptType3=Ps1&FirstLogonScript0=%24user+%3D+%27microsoft%27%3B%0D%0A%24repository+%3D+%27terminal%27%3B%0D%0A%0D%0A%24latest+%3D+%24%28%0D%0A++++%26+%7B%0D%0A++++++++%24ProgressPreference+%3D+%27SilentlyContinue%27%3B%0D%0A++++++++Invoke-WebRequest+-Uri+%22https%3A%2F%2Fapi.github.com%2Frepos%2F%24%7Buser%7D%2F%24%7Brepository%7D%2Freleases%22+-UseBasicParsing+-Headers+%40%7B%0D%0A++++++++++++Accept+%3D+%27application%2Fvnd.github.v3%2Bjson%27%3B%0D%0A++++++++%7D+%7C+Select-Object+-ExpandProperty+%27Content%27+%7C+ConvertFrom-Json%3B%0D%0A++++%7D%3B%0D%0A%29+%7C+Where-Object+-FilterScript+%7B%0D%0A++++-not+%24_.draft+-and+-not+%24_.prerelease%3B%0D%0A%7D+%7C+Select-Object+-First+1%3B%0D%0A%0D%0A%24latest.assets.browser_download_url+%7C+Where-Object+-FilterScript+%7B%0D%0A++++%24_+-match+%27%5C.msixbundle%24%27%3B%0D%0A%7D+%7C+Select-Object+-First+1+%7C+ForEach-Object+-Process+%7B%0D%0A++++%24uri+%3D+%5Buri%5D%3A%3Anew%28+%24_+%29%3B%0D%0A++++%24file+%3D+%22%24env%3ATEMP%5C%7B0%7D%22+-f+%24uri.Segments%5B-1%5D%3B%0D%0A++++%5BSystem.Net.WebClient%5D%3A%3Anew%28%29.DownloadFile%28+%24uri%2C+%24file+%29%3B%0D%0A++++Add-AppxProvisionedPackage+-Online+-PackagePath+%24file+-SkipLicense%3B%0D%0A++++Remove-Item+-LiteralPath+%24file+-ErrorAction+%27SilentlyContinue%27%3B%0D%0A%7D%3B&FirstLogonScriptType0=Ps1&FirstLogonScript1=foreach%28+%24drive+in+%5BSystem.IO.DriveInfo%5D%3A%3AGetDrives%28%29+%29+%7B%0D%0A++++if%28+%24found+%3D+Join-Path+-Path+%24drive.RootDirectory+-ChildPath+%27sources%5Csxs%27+-Resolve+-ErrorAction+%27SilentlyContinue%27+%29+%7B%0D%0A++++++++Enable-WindowsOptionalFeature+-Online+-FeatureName+%27NetFx3%27+-Source+%24found+-NoRestart%3B%0D%0A++++++++return%3B%0D%0A++++%7D%0D%0A%7D%0D%0A%27Cannot+find+any+files+that+match+pattern.%27+%7C+Write-Warning%3B&FirstLogonScriptType1=Ps1&FirstLogonScript2=Windows+Registry+Editor+Version+5.00%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CDwm%5D%0D%0A%22OverlayTestMode%22%3Ddword%3A00000005&FirstLogonScriptType2=Reg&FirstLogonScript3=Disable-MMAgent+-mc&FirstLogonScriptType3=Ps1&RestartExplorer=true&AppLockerMode=Skip-->
 	<settings pass="offlineServicing"></settings>
 	<settings pass="windowsPE">
 		<component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
@@ -111,8 +111,8 @@
 	<Extensions xmlns="https://schneegans.de/windows/unattend-generator/">
 		<Build>
 			<Commit>
-				<Hash>bf1399141716a23e95ff2aa36a3e9ced61279ac7</Hash>
-				<GitHubUrl>https://github.com/cschneegans/unattend-generator/commit/bf1399141716a23e95ff2aa36a3e9ced61279ac7</GitHubUrl>
+				<Hash>3de37dc6bc9bb1f63aeac7aa137c84c1b30b3b28</Hash>
+				<GitHubUrl>https://github.com/cschneegans/unattend-generator/commit/3de37dc6bc9bb1f63aeac7aa137c84c1b30b3b28</GitHubUrl>
 			</Commit>
 		</Build>
 		<ExtractScript>
@@ -491,7 +491,7 @@ $lightThemeSystem = 0;
 $lightThemeApps = 0;
 $accentColorOnStart = 0;
 $enableTransparency = 1;
-$htmlAccentColor = '#454545';
+$htmlAccentColor = '#CBA6F7';
 &amp; {
 	$params = @{
 		LiteralPath = 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize';
@@ -627,6 +627,24 @@ if( $out -match '\s([a-f0-9-]{36})\s' ) {
 }
 		</File>
 		<File path="C:\Windows\Setup\Scripts\unattend-04.ps1">
+$format = 'yyyy-MM-ddTHH\:mm\:ssK';
+$now = [datetime]::UtcNow;
+$start = $now.ToString($format);
+$end = $now.AddHours(1).ToString($format);
+$params = @{
+    LiteralPath = 'Registry::HKLM\Software\Microsoft\WindowsUpdate\UX\Settings';
+    Type = 'String';
+    Force = $true;
+    Verbose = $true;
+};
+'PauseFeatureUpdatesStartTime', 'PauseQualityUpdatesStartTime', 'PauseUpdatesStartTime' | foreach {
+    Set-ItemProperty @params -Name $_ -Value $start;
+};
+'PauseFeatureUpdatesEndTime', 'PauseQualityUpdatesEndTime', 'PauseUpdatesExpiryTime' | foreach {
+    Set-ItemProperty @params -Name $_ -Value $end;
+};
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-05.ps1">
 $user = 'microsoft';
 $repository = 'terminal';
 
@@ -651,7 +669,7 @@ $latest.assets.browser_download_url | Where-Object -FilterScript {
     Remove-Item -LiteralPath $file -ErrorAction 'SilentlyContinue';
 };
 		</File>
-		<File path="C:\Windows\Setup\Scripts\unattend-05.ps1">
+		<File path="C:\Windows\Setup\Scripts\unattend-06.ps1">
 foreach( $drive in [System.IO.DriveInfo]::GetDrives() ) {
     if( $found = Join-Path -Path $drive.RootDirectory -ChildPath 'sources\sxs' -Resolve -ErrorAction 'SilentlyContinue' ) {
         Enable-WindowsOptionalFeature -Online -FeatureName 'NetFx3' -Source $found -NoRestart;
@@ -660,13 +678,13 @@ foreach( $drive in [System.IO.DriveInfo]::GetDrives() ) {
 }
 'Cannot find any files that match pattern.' | Write-Warning;
 		</File>
-		<File path="C:\Windows\Setup\Scripts\unattend-06.reg">
+		<File path="C:\Windows\Setup\Scripts\unattend-07.reg">
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm]
 "OverlayTestMode"=dword:00000005
 		</File>
-		<File path="C:\Windows\Setup\Scripts\unattend-07.ps1">
+		<File path="C:\Windows\Setup\Scripts\unattend-08.ps1">
 Disable-MMAgent -mc
 		</File>
 		<File path="C:\Windows\Setup\Scripts\Specialize.ps1">
@@ -797,6 +815,9 @@ $scripts = @(
 	};
 	{
 		&amp; 'C:\Windows\Setup\Scripts\unattend-03.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-04.ps1';
 	};
 );
 
@@ -1041,16 +1062,16 @@ $scripts = @(
 		cmd.exe /c "rmdir C:\Windows.old";
 	};
 	{
-		&amp; 'C:\Windows\Setup\Scripts\unattend-04.ps1';
-	};
-	{
 		&amp; 'C:\Windows\Setup\Scripts\unattend-05.ps1';
 	};
 	{
-		reg.exe import "C:\Windows\Setup\Scripts\unattend-06.reg";
+		&amp; 'C:\Windows\Setup\Scripts\unattend-06.ps1';
 	};
 	{
-		&amp; 'C:\Windows\Setup\Scripts\unattend-07.ps1';
+		reg.exe import "C:\Windows\Setup\Scripts\unattend-07.reg";
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-08.ps1';
 	};
 	{
 		Remove-Item -LiteralPath @(
