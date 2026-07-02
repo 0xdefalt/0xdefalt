@@ -23,9 +23,8 @@
 2026-06-29 06:59 | Push           | 0xdefalt/0xdefalt
 2026-06-24 03:19 | Watch          | gabireze/tiktok-all-reposted-videos-remover
 2026-06-04 18:43 | Watch          | Platane/snk
-2026-06-01 07:27 | Watch          | Minestom/Minestom
 -------------------------------------------------------------------------------
 
-Last updated: 2026-07-01 00:34:30
+Last updated: 2026-07-02 00:33:49
 ```
 <!-- END_SECTION:style -->
