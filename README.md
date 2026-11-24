@@ -21,13 +21,13 @@
 +------------------------------------+                                 | Followers | 13 |
                                                                        +----------------+
 -------------------------------------------------------------------
-2026-11-22 03:51 | Watch          | ItsNotRexed/Leonida
+2026-11-24 03:59 | Watch          | ivall/xcl
+2026-11-24 01:34 | Watch          | Marvisak/VIctory
 2026-11-20 18:20 | Watch          | cloudflare/security-audit-skill
 2026-11-20 02:35 | Watch          | Likely7/Veyra-NRVideo
 2026-11-17 06:56 | Watch          | horizon-rust/horizon
-2026-11-15 17:21 | Watch          | elripalda/RecompLauncher
 -------------------------------------------------------------------
 
-Last updated: 2026-11-23 04:54:46
+Last updated: 2026-11-24 07:43:35
 ```
 <!-- END_SECTION:style -->
