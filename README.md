@@ -21,13 +21,13 @@
 +------------------------------------+                                 | Followers | 13 |
                                                                        +----------------+
 -------------------------------------------------------------------
-2026-11-24 03:59 | Watch          | ivall/xcl
+2026-11-24 21:22 | Watch          | fxceless/victory-fork
+2026-11-24 15:54 | Watch          | heydamir/unslop
+2026-11-24 03:59 | Watch          | xcl-dev/xcl
 2026-11-24 01:34 | Watch          | Marvisak/VIctory
 2026-11-20 18:20 | Watch          | cloudflare/security-audit-skill
-2026-11-20 02:35 | Watch          | Likely7/Veyra-NRVideo
-2026-11-17 06:56 | Watch          | horizon-rust/horizon
 -------------------------------------------------------------------
 
-Last updated: 2026-11-24 07:43:35
+Last updated: 2026-11-25 06:14:26
 ```
 <!-- END_SECTION:style -->
