@@ -28,6 +28,6 @@
 2026-11-20 18:20 | Watch          | cloudflare/security-audit-skill
 -------------------------------------------------------------------
 
-Last updated: 2026-11-27 05:58:01
+Last updated: 2026-11-28 05:39:28
 ```
 <!-- END_SECTION:style -->
